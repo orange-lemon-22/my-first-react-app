@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div style={{ padding: '40px', fontFamily: 'sans-serif' }}>
-      <h1>現在の進捗: {viewMap[status] || <span>その他</span>}</h1>
+      <h1>リアルタイム進捗状況: {viewMap[status] || <span>その他</span>}</h1>
       <button onClick={() => setStatus(0)}>0にする</button>
       <button onClick={() => setStatus(1)}>1にする</button>
       <button onClick={() => setStatus(100)}>100にする</button>
